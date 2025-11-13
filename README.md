@@ -1,7 +1,7 @@
-# mtid-proto
+# caretta-id-proto
 
-Protobuf definitions for MTID (Multi-length Triplet ID) messages.
-For Rust implementation and usage examples, see https://github.com/fluo10/mtid
+Protobuf definitions for caretta-id messages.
+For Rust implementation and usage examples, see https://github.com/fluo10/caretta-id
 
 ## Usage
 
@@ -10,7 +10,7 @@ For Rust implementation and usage examples, see https://github.com/fluo10/mtid
 Add this repository to your project.
 
 ```bash
-git submodule add https://github.com/fluo10/mtid-proto
+git submodule add https://github.com/fluo10/caretta-id-proto
 ```
 
 ### Import
@@ -21,10 +21,10 @@ Import and define new message.
 syntax = "proto3";
 package foo;
 
-import "mtid/dtid.proto";
+import "caretta_id/caretta_id_d.proto";
 
 message Bar {
-    mtid.Dtid id = 1;
+    caretta_id.CarettaIdD id = 1;
 }
 ```
 
@@ -33,7 +33,7 @@ message Bar {
 You must specify the added directory using the `--proto_path` option during compilation.
 
 ```bash
-protoc --proto_path=mtid-proto --python_out=BUILD_DIR foo/bar.proto
+protoc --proto_path=caretta-id-proto --python_out=BUILD_DIR foo/bar.proto
 ```
 
 ## License

@@ -1,0 +1,7 @@
+syntax = "proto3";
+package caretta_id;
+
+// Double size Caretta ID message
+message CarettaIdD {
+    uint32 value = 1;
+}
