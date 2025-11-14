@@ -1,7 +1,7 @@
 syntax = "proto3";
 package caretta_id;
 
-// Triple size Caretta ID message
+// Triple size Caretta ID message (Deprecated)
 message CarettaIdT {
     uint64 value = 1;
 }
